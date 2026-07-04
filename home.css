@@ -9,12 +9,12 @@ h2{
 .recipe{
     color:darkorange;
     font-size: 60px;
-    text-border:1px solid black;
+    
 }
 .finder{
     color:black;
     font-size: 60px;
-    text-border:1px solid black;
+    
 }
 #searchInput{
     display: block;
