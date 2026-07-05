@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Finder</title>
+<link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+<nav class="navbar">
+
+    <div class="logo">
+        👨🏻‍🍳 <span class="recipe">Recipe</span><span class="finder">Finder</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+</nav>
+
+<div class="hero">
+
+    <h1>
+        <span class="recipe">Recipe</span>
+        <span class="finder">Finder</span>
+    </h1>
+
+    <h2>Find the best recipes for your taste!</h2>
+
+    <div class="search-container">
+
+        <span class="search-icon">🔍</span>
+
+        <input
+                type="text"
+                  id="searchInput"
+                  placeholder="Search recipes...">
+
+<button id="searchButton">Search</button>
+
+    </div>
+
+    <div class="categories">
+
+        <button class="category active">🍽 All</button>
+        <button class="category">☕ Breakfast</button>
+        <button class="category">🥪 Lunch</button>
+        <button class="category">🍲 Dinner</button>
+        <button class="category">🍰 Dessert</button>
+
+    </div>
+
+    <!-- Veg / Non-Veg Toggle BELOW Dessert -->
+
+    <div class="food-toggle">
+
+        <span id="vegLabel">🥗 Veg</span>
+
+        <div class="switch" id="switch">
+            <div class="slider"></div>
+        </div>
+
+        <span id="nonVegLabel">🍗 Non-Veg</span>
+
+    </div>
+
+</div>
+<section class="popular">
+
+    <div class="heading">
+        <h2>Popular Recipes</h2>
+        <a href="#">View All →</a>
+    </div>
+
+    <div class="recipe-container">
+
+        <div class="card">
+            <button class="heart">♡</button>
+            <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/09/Chicken-Biryani-Recipe-01-1.jpg">
+            <div class="card-content">
+                <h3>Chicken Biryani</h3>
+                <p>🍛 Biryani &nbsp;&nbsp; 🌍 Indian</p>
+                <p>⏱ 45 mins &nbsp;&nbsp; 👥 4 servings</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <button class="heart">♡</button>
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800" alt="">
+            <div class="card-content">
+                <h3>Chicken Curry</h3>
+                <p>🍗 Chicken &nbsp;&nbsp; 🌍 Indian</p>
+                <p>⏱ 40 mins &nbsp;&nbsp; 👥 4 servings</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <button class="heart">♡</button>
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="">
+            <div class="card-content">
+                <h3>Chocolate Cake</h3>
+                <p>🍰 Dessert &nbsp;&nbsp; 🌍 American</p>
+                <p>⏱ 30 mins &nbsp;&nbsp; 👥 2 servings</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <button class="heart">♡</button>
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800" alt="">
+            <div class="card-content">
+                <h3>Veg Fried Rice</h3>
+                <p>🍚 Rice &nbsp;&nbsp; 🌍 Chinese</p>
+                <p>⏱ 25 mins &nbsp;&nbsp; 👥 2 servings</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="results">
+    <h2 id="resultTitle">Search Results</h2>
+
+    <div id="recipeContainer" class="recipe-container">
+
+    </div>
+</section>
+<script src="home.js"></script>
+</body>
+</html>
